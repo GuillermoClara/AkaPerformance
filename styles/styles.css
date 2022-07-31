@@ -1,0 +1,659 @@
+:root{
+  --section-title-size: 2.5rem;
+  --service-title-size: 1.8rem;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body, h1, p{
+  margin: 0;
+  padding: 0;
+  font-family: "Maven Pro"
+}
+
+section{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+svg {
+    stroke: transparent;
+    stroke-width: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#hero{
+  background-color: black;
+  color: white;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.logo img{
+  max-width: 100%;
+  height: 150px;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.hamburger{
+  fill: white;
+  display: none;
+  margin-right: 0;
+}
+
+.hero-container{
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 2rem;
+}
+
+.hero-info{
+  width: 40%;
+  line-height: 1.2;
+  flex-shrink: 1;
+}
+
+
+.hero-title{
+  color: #E02401;
+  word-wrap: break-word;
+  font-size: 4rem;
+  line-height: 1;
+  padding-bottom: 2rem;
+  font-family: "League Spartan";
+}
+
+.hero-desc{
+  word-wrap: break-word;
+  width: 85%;
+}
+
+.hero-socials{
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-top: 2rem;
+}
+
+.social{
+  color: #E02401;
+  text-align: center;
+  align-items: center;
+  border-radius: 200%;
+  justify-content: flex-start;
+}
+
+.hero-btns{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.cta-btn{
+  font-family: "Maven Pro";
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  outline: none;
+  width: 30%;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.red{
+  background-color: #E02401;
+  color: white;
+}
+
+.dark{
+  background-color: black !important;
+  border-color: white !important;
+  color: white !important;
+}
+
+.hero-image img{
+  max-width: 100%;
+}
+
+.hero-image{
+  align-self: center;
+  flex-basis: 60%;
+}
+
+.section-container{
+  padding: 5% 0;
+  text-align: center;
+}
+
+.section-title{
+  font-weight: normal;
+  font-size: var(--section-title-size);
+  font-family: "League Spartan";
+}
+
+.title-focus{
+  font-weight: bold;
+  color: #E02401;
+  text-decoration: underline;
+}
+
+.services{
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.service{
+  width: 35%;
+}
+
+.service-title{
+  font-size: var(--service-title-size);
+}
+
+.service-icon-bg{
+  color: white;
+  background-color: #E02401;
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.service-desc{
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+#gallery{
+  background-color: black;
+  color: white;
+}
+
+.projects-info{
+  flex-basis: 40%;
+  text-align: left;
+}
+
+.projects-desc{
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  width: 80%;
+}
+
+.projects-container, .divided-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+  grid-gap: 10px;
+  grid-auto-rows: 150px;
+  grid-auto-flow: dense;
+  flex-basis: 60%;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  grid-gap: 25px;
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+  max-width: 950px;
+  margin: auto;
+}
+
+
+.projects .project, .gallery .gallery-item{
+  position: relative;
+  overflow: hidden;
+}
+
+.projects .project:nth-child(3n+1), .gallery .gallery-item:nth-child(7n+1){
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.project img, .gallery-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.project:hover img, .gallery-item:hover img{
+  transform: scale(1.2);
+}
+
+
+.brands-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.brand{
+  width: 8%;
+}
+
+.brand img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*
+
+CONTACT SECTION
+
+*/
+
+#contact{
+  background-color: black;
+  color: white;
+}
+
+.contact-container{
+  width: 60%;
+  margin: auto;
+}
+
+.contact-info{
+  display: flex;
+  border-bottom: solid 5px #E02401;
+  justify-content: space-between;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main-contacts, .social-contacts{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-form{
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.social-contact{
+  align-self: flex-end;
+}
+
+.phone, .email{
+  align-self: flex-start;
+}
+
+.phone, .email, .social-contact{
+  display: flex;
+  gap: 10px;
+  flex-basis: 100%;
+}
+
+.main-input{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.second-input{
+  display: flex;
+  flex-direction: column;
+}
+
+a{
+  text-align: center;
+}
+
+.main-input input{
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+input, textarea{
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  font-family: "Maven Pro";
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.email-input, textarea{
+  flex-basis: auto;
+  margin-bottom: 2rem;
+  resize: none;
+  flex-grow: 1;
+
+}
+
+.submit-input{
+  text-align: right;
+}
+
+.submit-btn{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: #E02401;
+  color: white;
+  font-family: "Maven Pro";
+  font-weight: bold;
+  border-radius: 10px;
+  outline: none;
+  width: 20%;
+}
+
+#footer{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.footer-desc{
+  display: flex;
+  padding: 0.8rem 0;
+  font-family: "League Spartan";
+  font-weight: bold;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: auto;
+}
+
+.footer-desc p{
+  flex-grow: 1;
+  text-align: center;
+}
+
+button{
+  cursor: pointer;
+}
+
+.contact-desc{
+  vertical-align: bottom;
+}
+
+@media screen and (max-width: 1300px){
+  .hero-container{
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .hero-info{
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    width: 80%;
+  }
+
+  .hero-socials, .hero-btns{
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero-desc{
+    margin: auto;
+  }
+
+  .projects-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .projects, .projects-info{
+    flex-basis: 100%;
+  }
+
+  .projects-info{
+    text-align: center;
+  }
+
+  .projects-desc{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px){
+  section{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .services{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service{
+    width: 60%;
+  }
+
+  .contact-container{
+    width: 80%;
+  }
+
+  .links{
+    display: none;
+    flex-direction: column;
+    order: 2;
+    flex-basis: 100%;
+    height: 0;
+    transition: height 4s ease-in-out;
+    border-radius: 5px;
+    width: 60%;
+    padding-bottom: 2rem;
+  }
+
+
+  .link{
+    color: white;
+    flex-basis: 100%;
+  }
+
+  .links a{
+    border-bottom: solid 5px #E02401;
+  }
+
+
+  .active{
+    height: 200px;
+    display: flex;
+  }
+
+  .active-hamburger{
+    fill: #E02401;
+  }
+
+
+
+
+  .hamburger{
+    display: inline;
+    cursor: pointer;
+    margin: auto;
+    margin-right: 0;
+    vertical-align: bottom;
+  }
+
+  .divided-container{
+    flex-direction: column-reverse;
+  }
+
+
+
+}
+
+@media screen and (max-width: 700px){
+
+  :root{
+    --section-title-size: 2.2rem;
+    --service-title-size: 1.4rem;
+  }
+
+  .footer-desc{
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .hero-title{
+    font-size: 3rem;
+    padding-bottom: 0.8rem;
+  }
+
+
+  .hero-btns{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-btn{
+    width: 60%;
+    margin: 0;
+  }
+
+
+  .brands-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .brand{
+    width: 20%;
+  }
+
+  .submit-btn{
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .email, .phone{
+    flex-direction: column;
+  }
+
+  .social-contact{
+    flex-direction: column-reverse;
+  }
+
+  .email, .phone, .social-contact{
+    align-self: auto;
+  }
+
+  .main-contacts, .social-contacts{
+    margin: auto;
+    padding-bottom: 1rem;
+  }
+
+  .main-input{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  section{
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .footer-elements{
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+}
+
+/* EFFECTS */
+
+input:focus, textarea:focus{
+  box-shadow: 1px 1px 22px 13px rgba(224,36,1,0.74);
+}
+
+.links a:hover{
+  border-bottom: solid 5px #E02401;
+}
+
+.project-img img:hover{
+  transform: scale(1.1);
+}
+
+.brand img:hover{
+  color: red;
+}
+
+/* Showroom */
+
+.advertise-info{
+  text-align: left;
+  line-height: 1.5;
+  flex-basis: 40%;
+}
+
+.advertise-image{
+  flex-basis: 60%;
+  text-align: right;
+}
+
+.blob-image img{
+  border-radius: 54% 46% 70% 30% / 53% 61% 39% 47%;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+
+}
+
+.blob-image{
+  height: 500px;
+}
+
+.divided-container{
+  border-bottom: solid #E02401 5px;
+  margin-bottom: 0;
+}
+
+.footer-elements{
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-socials{
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+
+
+}
