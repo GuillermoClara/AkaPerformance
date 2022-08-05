@@ -1,158 +1,344 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>Aka Performance</title>
-    <link rel="icon" href="assets/logo.ico">
+<head>
 
-    <!--FontAwesome connect-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Aka Performance</title>
+  <link rel="icon" href="assets/logo.ico">
 
-    <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Maven+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <!--FontAwesome connect-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="styles/styles.css">
-  </head>
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Maven+Pro:wght@400;600&display=swap" rel="stylesheet">
 
-  <body>
-    <section id="hero">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
 
-      <div class="nav">
+<body>
 
-        <div class="logo">
-          <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
-        </div>
+  <section id="nav-section" class="dark">
+
+    <div class="nav">
+
+      <div class="logo">
+        <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
+      </div>
 
 
-        <svg class="hamburger" viewBox="0 0 100 80" width="40" height="40">
-            <rect width="100" height="20"></rect>
-            <rect y="30" width="100" height="20"></rect>
-            <rect y="60" width="100" height="20"></rect>
-        </svg>
+      <svg class="hamburger" viewBox="0 0 100 80" width="40" height="40">
+        <rect width="100" height="20"></rect>
+        <rect y="30" width="100" height="20"></rect>
+        <rect y="60" width="100" height="20"></rect>
+      </svg>
 
-        <div class="links">
-          <a href="index.html#services" class="link">SERVICIOS</a>
-          <a href="index.html#gallery" class="link">GALERIA</a>
-          <a href="index.html#brands" class="link">MARCAS</a>
-          <a href="index.html#contact" class="link">CONTACTO</a>
-
-        </div>
+      <div class="links">
+        <a href="index.html#services" class="link">SERVICIOS</a>
+        <a href="index.html#gallery" class="link">GALERIA</a>
+        <a href="index.html#brands" class="link">MARCAS</a>
+        <a href="index.html#contact" class="link">CONTACTO</a>
 
       </div>
 
-    </section>
+    </div>
 
-    <section id="extended-gallery">
-      <div class="section-container">
-        <h2 class="section-title">Nuestros Clientes</h1>
+  </section>
 
-          <div class="gallery">
+  <section id="extended-gallery">
+    <div class="section-container">
+      <h2 class="section-title">Nuestros Proyectos</h1>
 
-            <div class="gallery-item">
-                <img src="assets/gallery/bmw_m3_f80.jpg" alt="project">
-            </div>
+        <div class="gallery">
 
-            <div class="gallery-item">
-                <img src="assets/gallery/DSC02181.jpg" alt="project">
-            </div>
+          <!--Guia de elemento
 
-            <div class="gallery-item">
-                <img src="assets/gallery/DSC02184.jpg" alt="project">
-            </div>
+              Para agregar un nuevo proyecto a la GALERIA
+              copiar y pegar todo lo que esta dentro del div "gallery-item"
 
-            <div class="gallery-item">
-                <img src="assets/gallery/brakes.jpg" alt="project">
-            </div>
+              Para cambiar titulo, cambiar texto dentro del tag "project-title"
 
-            <div class="gallery-item">
-                <img src="assets/gallery/tires.jpg" alt="project">
-            </div>
+              Para agregar un elemento a la lista de cambios, agregar
+              <li> Texto </li>
+              Estos elementos siempre tienen que ir dentro del tag "changes-done"
 
-            <div class="gallery-item">
-                <img src="assets/gallery/bmw3.jpg" alt="project">
-            </div>
+              No es necesario agregar line breaks, el programa lo adapta solo
 
-            <div class="gallery-item">
-                <img src="assets/gallery/DSC02188.jpg" alt="project">
-            </div>
+              La pagina web va a adaptar automaticamente el tamano de las
+              imagenes
 
-            <div class="gallery-item">
-                <img src="assets/gallery/DSC02177.jpg" alt="project">
-            </div>
+              Para editar la imagen, cambiar la url de la imagen (la imagen tiene
+              que estar agregada al folder designado)
 
-            <div class="gallery-item">
-                <img src="assets/gallery/DSC02156.jpg" alt="project">
-            </div>
+          -->
 
-            <div class="gallery-item">
-                <img src="assets/gallery/DSC02148.jpg" alt="project">
+          <div class="gallery-item">
+            <img src="assets/gallery/bmw_m3_f80.jpg" alt="project">
+
+            <div class="gallery-description">
+
+              <i class="fa-solid fa-info fa-2x info-icon"></i>
+
+              <div class="gallery-description-container">
+                <h3 class="project-title">Project Title</h3>
+                <ul class="changes-done">
+                  <li>- Cambio 1</li>
+                  <li>- Aliquam rhoncus leo turpis, nec facilisis urna iaculis quis. Vivamus eu elit ut nibh interdum accumsan. Praesent ultrices lacus nibh, sit amet dictum diam gravida quis. Integer purus lorem, ultricies et diam vel, tincidunt
+                    molestie arcu. Donec sit amet ipsum accumsan, cursus nibh sit amet, volutpat sapien.</li>
+                  <li>- Cambio 3</li>
+                  <li>- Cambio 4</li>
+                  <li>- Cambio 5</li>
+                  <li>- Cambio 6</li>
+                  <li>- Cambio 7</li>
+                  <li>- Cambio 8</li>
+                  <li>- Cambio 9</li>
+                  <li>- Cambio 10</li>
+                  <li>- Cambio 11</li>
+                  <li>- Cambio 12</li>
+                </ul>
+              </div>
             </div>
 
           </div>
-      </div>
 
+          <div class="gallery-item">
+            <img src="assets/gallery/DSC02181.jpg" alt="project">
 
-    </section>
+            <div class="gallery-description">
 
-    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s; vertical-align: top" viewBox="0 0 1440 380" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop><stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,76L48,88.7C96,101,192,127,288,133C384,139,480,127,576,152C672,177,768,241,864,234.3C960,228,1056,152,1152,133C1248,114,1344,152,1440,145.7C1536,139,1632,89,1728,76C1824,63,1920,89,2016,139.3C2112,190,2208,266,2304,253.3C2400,241,2496,139,2592,126.7C2688,114,2784,190,2880,190C2976,190,3072,114,3168,120.3C3264,127,3360,215,3456,234.3C3552,253,3648,203,3744,171C3840,139,3936,127,4032,126.7C4128,127,4224,139,4320,145.7C4416,152,4512,152,4608,145.7C4704,139,4800,127,4896,158.3C4992,190,5088,266,5184,247C5280,228,5376,114,5472,95C5568,76,5664,152,5760,158.3C5856,165,5952,101,6048,69.7C6144,38,6240,38,6336,38C6432,38,6528,38,6624,44.3C6720,51,6816,63,6864,69.7L6912,76L6912,380L6864,380C6816,380,6720,380,6624,380C6528,380,6432,380,6336,380C6240,380,6144,380,6048,380C5952,380,5856,380,5760,380C5664,380,5568,380,5472,380C5376,380,5280,380,5184,380C5088,380,4992,380,4896,380C4800,380,4704,380,4608,380C4512,380,4416,380,4320,380C4224,380,4128,380,4032,380C3936,380,3840,380,3744,380C3648,380,3552,380,3456,380C3360,380,3264,380,3168,380C3072,380,2976,380,2880,380C2784,380,2688,380,2592,380C2496,380,2400,380,2304,380C2208,380,2112,380,2016,380C1920,380,1824,380,1728,380C1632,380,1536,380,1440,380C1344,380,1248,380,1152,380C1056,380,960,380,864,380C768,380,672,380,576,380C480,380,384,380,288,380C192,380,96,380,48,380L0,380Z"></path></svg>
+              <i class="fa-solid fa-info fa-2x info-icon"></i>
 
-    <section id="advertise-gallery" class="dark">
-      <div class="section-container divided-container">
-
-        <div class="advertise-info">
-          <h2 class="section-title">Te gustaría formar parte de nuestro Showroom?</h2>
-          <div class="projects-desc">
-            <p>Aenean lorem metus, fermentum et leo quis, rutrum viverra risus.
-               Nullam faucibus pulvinar suscipit.Pellentesque et iaculis elit. Nulla eros nisl, bibendum non orci quis, auctor scelerisque magna.</p>
+              <div class="gallery-description-container">
+                <h3 class="project-title">Project Title</h3>
+                <ul class="changes-done">
+                  <li>- Cambio 1</li>
+                  <li>- Cambio 2</li>
+                  <li>- Cambio 3</li>
+                </ul>
+              </div>
+            </div>
 
           </div>
-          <a href="showroom.html">
-            <button type="button" name="button" class="cta-btn red"> Contactanos </button>
-          </a>
-        </div>
 
-        <div class="advertise-image">
-            <div class="blob-image">
-              <img class="blob-img" src="assets/gallery/DSC02181.jpg" alt="advertise_image">
+          <div class="gallery-item">
+            <img src="assets/gallery/DSC02184.jpg" alt="project">
+
+            <div class="gallery-description">
+
+              <i class="fa-solid fa-info fa-2x info-icon"></i>
+
+              <div class="gallery-description-container">
+                <h3 class="project-title">Project Title</h3>
+                <ul class="changes-done">
+                  <li>- Cambio 1</li>
+                  <li>- Cambio 2</li>
+                  <li>- Cambio 3</li>
+                </ul>
+              </div>
             </div>
+
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/gallery/brakes.jpg" alt="project">
+
+            <div class="gallery-description">
+
+              <i class="fa-solid fa-info fa-2x info-icon"></i>
+
+              <div class="gallery-description-container">
+                <h3 class="project-title">Project Title</h3>
+                <ul class="changes-done">
+                  <li>- Cambio 1</li>
+                  <li>- Cambio 2</li>
+                  <li>- Cambio 3</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/gallery/tires.jpg" alt="project">
+
+            <div class="gallery-description">
+
+              <i class="fa-solid fa-info fa-2x info-icon"></i>
+
+              <div class="gallery-description-container">
+                <h3 class="project-title">Project Title</h3>
+                <ul class="changes-done">
+                  <li>- Cambio 1</li>
+                  <li>- Cambio 2</li>
+                  <li>- Cambio 3</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/gallery/bmw_white_2.jpg" alt="project">
+
+            <div class="gallery-description">
+
+              <i class="fa-solid fa-info fa-2x info-icon"></i>
+
+              <div class="gallery-description-container">
+                <h3 class="project-title">Project Title</h3>
+                <ul class="changes-done">
+                  <li>- Cambio 1</li>
+                  <li>- Cambio 2</li>
+                  <li>- Cambio 3</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="gallery-item">
+            <img src="assets/gallery/DSC02156.jpg" alt="project">
+
+            <div class="gallery-description">
+
+              <i class="fa-solid fa-info fa-2x info-icon"></i>
+
+              <div class="gallery-description-container">
+                <h3 class="project-title">Project Title</h3>
+                <ul class="changes-done">
+                  <li>- Cambio 1</li>
+                  <li>- Cambio 2</li>
+                  <li>- Cambio 3</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/gallery/DSC02177.jpg" alt="project">
+
+            <div class="gallery-description">
+
+              <i class="fa-solid fa-info fa-2x info-icon"></i>
+
+              <div class="gallery-description-container">
+                <h3 class="project-title">Project Title</h3>
+                <ul class="changes-done">
+                  <li>- Cambio 1</li>
+                  <li>- Cambio 2</li>
+                  <li>- Cambio 3</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="gallery-item">
+            <img src="assets/gallery/DSC02148.jpg" alt="project">
+
+            <div class="gallery-description">
+
+              <i class="fa-solid fa-info fa-2x info-icon"></i>
+
+              <div class="gallery-description-container">
+                <h3 class="project-title">Project Title</h3>
+                <ul class="changes-done">
+                  <li>- Cambio 1</li>
+                  <li>- Cambio 2</li>
+                  <li>- Cambio 3</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
         </div>
+    </div>
 
 
+  </section>
 
+  <svg id="wave" style="transform:rotate(0deg); transition: 0.3s; vertical-align: top" viewBox="0 0 1440 380" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop>
+        <stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+      d="M0,76L48,88.7C96,101,192,127,288,133C384,139,480,127,576,152C672,177,768,241,864,234.3C960,228,1056,152,1152,133C1248,114,1344,152,1440,145.7C1536,139,1632,89,1728,76C1824,63,1920,89,2016,139.3C2112,190,2208,266,2304,253.3C2400,241,2496,139,2592,126.7C2688,114,2784,190,2880,190C2976,190,3072,114,3168,120.3C3264,127,3360,215,3456,234.3C3552,253,3648,203,3744,171C3840,139,3936,127,4032,126.7C4128,127,4224,139,4320,145.7C4416,152,4512,152,4608,145.7C4704,139,4800,127,4896,158.3C4992,190,5088,266,5184,247C5280,228,5376,114,5472,95C5568,76,5664,152,5760,158.3C5856,165,5952,101,6048,69.7C6144,38,6240,38,6336,38C6432,38,6528,38,6624,44.3C6720,51,6816,63,6864,69.7L6912,76L6912,380L6864,380C6816,380,6720,380,6624,380C6528,380,6432,380,6336,380C6240,380,6144,380,6048,380C5952,380,5856,380,5760,380C5664,380,5568,380,5472,380C5376,380,5280,380,5184,380C5088,380,4992,380,4896,380C4800,380,4704,380,4608,380C4512,380,4416,380,4320,380C4224,380,4128,380,4032,380C3936,380,3840,380,3744,380C3648,380,3552,380,3456,380C3360,380,3264,380,3168,380C3072,380,2976,380,2880,380C2784,380,2688,380,2592,380C2496,380,2400,380,2304,380C2208,380,2112,380,2016,380C1920,380,1824,380,1728,380C1632,380,1536,380,1440,380C1344,380,1248,380,1152,380C1056,380,960,380,864,380C768,380,672,380,576,380C480,380,384,380,288,380C192,380,96,380,48,380L0,380Z">
+    </path>
+  </svg>
+
+  <section id="advertise-gallery" class="dark">
+    <div class="section-container divided-container">
+
+      <div class="advertise-info">
+        <h2 class="section-title">Te gustaría formar parte de nuestro Showroom?</h2>
+        <div class="projects-desc">
+          <p>Aenean lorem metus, fermentum et leo quis, rutrum viverra risus.
+            Nullam faucibus pulvinar suscipit.Pellentesque et iaculis elit. Nulla eros nisl, bibendum non orci quis, auctor scelerisque magna.</p>
+
+        </div>
+        <a href="index.html#contact">
+          <button type="button" name="button" class="section-btn red"> Contactanos </button>
+        </a>
       </div>
-    </section>
-    <section id="footer" class="dark">
-      <div class="footer-elements">
-        <p>© AKA PERFORMANCE SV 2022</p>
 
-        <p>Desarollado por <span class="title-focus">
-          <a class="title-focus"href="https://github.com/GuillermoClara"
-          target="_blank">ClaMart</a>
+      <div class="advertise-image">
+        <div class="blob-image">
+          <img class="blob-img" src="assets/gallery/car_group.jpg" alt="advertise_image">
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <section id="footer" class="dark">
+    <div class="footer-elements">
+      <p>© AKA PERFORMANCE SV 2022</p>
+
+      <p>Desarollado por <span class="title-focus">
+          <a class="title-focus" href="https://github.com/GuillermoClara" target="_blank">ClaMart</a>
         </span> </p>
 
-        <p>TODOS LOS DERECHOS RESERVADOS</p>
+      <p>TODOS LOS DERECHOS RESERVADOS</p>
 
-        <div class="footer-socials">
-            <i class="fa-brands fa-instagram fa-2x social"></i>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/akaperformancesv" target="_blank">
+          <i class="fa-brands fa-instagram fa-2x social"></i>
+        </a>
 
-            <i class="fa-brands fa-facebook-f fa-2x social"></i>
+        <a href="https://www.facebook.com/akaperformancesv" target="_blank">
+          <i class="fa-brands fa-facebook-f fa-2x social"></i>
+        </a>
 
-            <i class="fa-brands fa-whatsapp fa-2x social"></i>
-        </div>
-
-
+        <a href="https://api.whatsapp.com/send?phone=50369607039&text=Hola,%20estoy%20interesado%20en%20los%20servicios%20que%20ofrece%20AkaPerformance" target="_blank">
+          <i class="fa-brands fa-whatsapp fa-2x social"></i>
+        </a>
 
 
       </div>
 
-    </section>
+
+
+
+    </div>
+
+  </section>
 
 
   <script type="text/javascript" src="hamburger.js"></script>
-  </body>
+</body>
+
 </html>
