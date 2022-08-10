@@ -321,6 +321,7 @@ li{
   height: 80%;
   overflow-y: auto;
   padding-bottom: 1rem;
+  opacity: 1;
 }
 
 
@@ -329,7 +330,6 @@ li{
   padding-left: 2rem;
   width: 80%;
   height: 90%;
-  opacity: 1;
 }
 
 .changes-done::-webkit-scrollbar{
@@ -553,7 +553,7 @@ input, textarea{
 /* HERO SECTION */
 
   .hero-container{
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 2rem;
   }
 
@@ -587,10 +587,6 @@ input, textarea{
 
   .projects, .projects-info{
     flex-basis: 100%;
-  }
-
-  .projects-info{
-    text-align: center;
   }
 
   .projects-desc{
@@ -699,9 +695,26 @@ input, textarea{
     padding-bottom: 0.8rem;
   }
 
+  .hero-info, .hero-desc{
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-desc, .hero-title{
+    width: 100%;
+  }
+
+  .hero-socials, .hero-btns{
+    justify-content: flex-start;
+  }
+
+  .hero-socials{
+    gap: 20%;
+  }
 
   .hero-btns{
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
