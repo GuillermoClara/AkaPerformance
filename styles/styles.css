@@ -301,7 +301,7 @@ li{
 }
 
 .gallery-item:nth-child(7n+1) .active-gallery-description{
-  height: 60%;
+  height: 60% !important;
 }
 
 .info-icon, .info-icon-mobile{
