@@ -57,6 +57,10 @@ li{
   border: solid 2px white !important;
 }
 
+.white{
+  color: white !important;
+}
+
 /* HERO SECTION */
 
 .nav{
@@ -97,7 +101,7 @@ li{
 }
 
 .hero-info{
-  width: 40%;
+  width: 45%;
   line-height: 1.2;
 }
 
@@ -292,7 +296,7 @@ li{
 }
 
 .active-gallery-description + img{
-  filter: blur(8px) brightness(50%);
+  filter: blur(8px) brightness(70%);
 
 }
 
@@ -557,7 +561,7 @@ input, textarea{
     margin: auto;
     text-align: center;
     align-content: center;
-    width: 80%;
+    width: 85%;
   }
 
   .hero-socials, .hero-btns{
