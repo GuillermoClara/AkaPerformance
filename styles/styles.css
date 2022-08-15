@@ -1,6 +1,7 @@
 :root{
   --section-title-size: 2.5rem;
   --service-title-size: 1.8rem;
+  --secondary-color: #A43131;
 }
 
 /* General elements styles */
@@ -44,7 +45,7 @@ li{
 /* COLOR COMBINATIONS */
 
 .red{
-  background-color: #E02401 !important;
+  background-color: var(--secondary-color) !important;
   color: white !important;
 }
 
@@ -107,7 +108,7 @@ li{
 
 
 .hero-title{
-  color: #E02401;
+  color: var(--secondary-color);
   word-wrap: break-word;
   font-size: 4rem;
   line-height: 1;
@@ -128,7 +129,7 @@ li{
 }
 
 .social {
-  color: #E02401;
+  color: var(--secondary-color);
   align-items: center;
 }
 
@@ -177,7 +178,7 @@ li{
 
 .title-focus{
   font-weight: bold;
-  color: #E02401;
+  color: var(--secondary-color);
   text-decoration: underline;
 }
 
@@ -198,7 +199,7 @@ li{
 
 .service-icon-bg{
   color: white;
-  background-color: #E02401;
+  background-color: var(--secondary-color);
   width: 150px;
   height: 150px;
   border-radius: 15px;
@@ -277,7 +278,7 @@ li{
   z-index: 2;
   width: 0;
   bottom: 0;
-  background-color: #E02401;
+  background-color: var(--secondary-color);
   opacity: 0.6;
   color: white;
   margin: auto;
@@ -368,7 +369,7 @@ CONTACT SECTION
 
 .contact-info{
   display: flex;
-  border-bottom: solid 5px #E02401;
+  border-bottom: solid 5px var(--secondary-color);
   justify-content: space-between;
   padding: 1.5rem;
   flex-wrap: wrap;
@@ -448,7 +449,7 @@ input, textarea{
 .submit-btn{
   font-size: 1.5rem;
   padding: 0.5rem;
-  background-color: #E02401;
+  background-color: var(--secondary-color);
   color: white;
   font-family: "Maven Pro";
   font-weight: bold;
@@ -516,7 +517,7 @@ input, textarea{
 }
 
 .divided-container{
-  border-bottom: solid #E02401 5px;
+  border-bottom: solid var(--secondary-color) 5px;
   margin-bottom: 0;
 }
 
@@ -628,7 +629,7 @@ input, textarea{
   }
 
   .links a{
-    border-bottom: solid 5px #E02401;
+    border-bottom: solid 5px var(--secondary-color);
   }
 
 
@@ -646,7 +647,7 @@ input, textarea{
   }
 
   .active-hamburger{
-    fill: #E02401;
+    fill: var(--secondary-color);
   }
 
   /* SERVICE SECTION */
@@ -691,7 +692,7 @@ input, textarea{
   }
 
   .hero-title{
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding-bottom: 0.8rem;
   }
 
@@ -701,8 +702,12 @@ input, textarea{
     margin-right: 0;
   }
 
-  .hero-desc, .hero-title{
+  .hero-desc{
     width: 100%;
+  }
+
+  .hero-title{
+    width: 90%;
   }
 
   .hero-socials, .hero-btns{
@@ -818,11 +823,11 @@ ______  __  __          _
 
 
 input:focus, textarea:focus{
-  box-shadow: 1px 1px 22px 13px rgba(224,36,1,0.74);
+  box-shadow: 1px 1px 22px 13px var(--secondary-color);
 }
 
 .links a:hover{
-  border-bottom: solid 5px #E02401;
+  border-bottom: solid 5px var(--secondary-color);
 }
 
 .project-img img:hover{
