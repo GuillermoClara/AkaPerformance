@@ -706,9 +706,6 @@ input, textarea{
     width: 100%;
   }
 
-  .hero-title{
-    width: 90%;
-  }
 
   .hero-socials, .hero-btns{
     justify-content: flex-start;
